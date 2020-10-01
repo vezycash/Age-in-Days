@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get Age in Days</title>
+    <link rel="stylesheet" href="./the-datepicker.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <!-- <h1>How many days-old are you?</h1> -->
+      <h1>How many DAYS have you lived?</h1>
+      <div class="container" id="dateChooser">
+        <input
+          type="text"
+          id="birthDate"
+          placeholder="Enter your Date of Birth"
+          oninput="getDays()"
+        />
+
+        <!-- <button onclick="getDays()">Get Your Age in Days</button> -->
+      </div>
+
+      <div class="container" id="result">Enter your Date of Birth.</div>
+
+      <div class="container">
+        <button onclick="reset()">Reset</button>
+      </div>
+    </div>
+  </body>
+  <script src="./the-datepicker.min.js"></script>
+  <script src="./script.js"></script>
+</html>
